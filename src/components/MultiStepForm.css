@@ -1,0 +1,99 @@
+
+.multi-form-container {
+  max-width: 550px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.multi-form-container h2 {
+  text-align: center;
+  color: #222;
+}
+
+.multi-form-container p {
+  text-align: center;
+  color: #666;
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 0 10px;
+  font-weight: bold;
+}
+
+.progress-track {
+  width: 100%;
+  height: 12px;
+  background: #e5e5e5;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #6554ff;
+  border-radius: 20px;
+  transition: width 0.4s ease;
+}
+
+.form-step {
+  margin: 25px 0;
+}
+
+.form-step h3 {
+  color: #6554ff;
+  margin-bottom: 20px;
+}
+
+.form-step label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.form-step input {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.form-buttons button,
+.success-message button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 7px;
+  background: #6554ff;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.form-buttons button:hover,
+.success-message button:hover {
+  background: #4938dc;
+}
+
+.success-message {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.success-message h3 {
+  color: #16a34a;
+}

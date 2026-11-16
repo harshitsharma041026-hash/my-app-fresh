@@ -1,0 +1,293 @@
+
+/* ========================================
+   NEXORA ABOUT PAGE
+   Modern, responsive agency design
+======================================== */
+
+/* Main page */
+.inner-page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 70px 7% 100px;
+  box-sizing: border-box;
+  background: #f8f9fc;
+  color: #172033;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
+
+/* ========================================
+   HERO SECTION
+======================================== */
+
+.page-hero {
+  position: relative;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 45px 0 100px;
+}
+
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 24px;
+  color: #6554ff;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.page-hero h1 {
+  max-width: 950px;
+  margin: 0 0 25px;
+  font-size: clamp(38px, 5.5vw, 72px);
+  font-weight: 800;
+  line-height: 1.12;
+  letter-spacing: -2.8px;
+  color: #172033;
+}
+
+.page-hero h1 span {
+  color: #6554ff;
+}
+
+.page-hero p {
+  max-width: 700px;
+  margin: 0;
+  color: #667085;
+  font-size: 18px;
+  line-height: 1.9;
+}
+
+/* ========================================
+   ABOUT STORY SECTION
+======================================== */
+
+.about-story {
+  display: grid;
+  grid-template-columns: 100px minmax(0, 1fr);
+  align-items: start;
+  gap: 35px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 55px 0 75px;
+  border-top: 1px solid #e4e7ef;
+}
+
+.story-mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 76px;
+  height: 76px;
+  border-radius: 24px;
+  background: linear-gradient(135deg, #7565ff, #5140e8);
+  color: #ffffff;
+  font-size: 27px;
+  font-weight: 800;
+  box-shadow: 0 12px 30px rgba(101, 84, 255, 0.2);
+}
+
+.about-story .eyebrow {
+  margin-bottom: 18px;
+}
+
+.about-story h2 {
+  max-width: 750px;
+  margin: 0 0 22px;
+  font-size: clamp(28px, 3.5vw, 42px);
+  font-weight: 750;
+  line-height: 1.25;
+  letter-spacing: -1.5px;
+  color: #172033;
+}
+
+.about-story p {
+  max-width: 800px;
+  margin: 0 0 14px;
+  color: #667085;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+/* Work with us link */
+.text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 18px;
+  color: #6554ff;
+  font-size: 16px;
+  font-weight: 750;
+  text-decoration: none;
+  transition: color 0.25s ease, gap 0.25s ease;
+}
+
+.text-link:hover {
+  color: #4030d5;
+  gap: 16px;
+}
+
+/* ========================================
+   VALUES / FEATURE CARDS
+======================================== */
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.values-grid article {
+  position: relative;
+  min-width: 0;
+  padding: 32px 28px;
+  border: 1px solid #e8eaf2;
+  border-radius: 22px;
+  background: #ffffff;
+  box-shadow: 0 5px 20px rgba(23, 32, 51, 0.025);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.values-grid article:hover {
+  transform: translateY(-7px);
+  border-color: #d4ceff;
+  box-shadow: 0 18px 40px rgba(39, 34, 100, 0.09);
+}
+
+.values-grid article span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  background: #f0eeff;
+  color: #6554ff;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.values-grid article h3 {
+  margin: 26px 0 12px;
+  color: #172033;
+  font-size: 23px;
+  font-weight: 750;
+  letter-spacing: -0.5px;
+}
+
+.values-grid article p {
+  margin: 0;
+  color: #667085;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* ========================================
+   TABLET RESPONSIVENESS
+======================================== */
+
+@media (max-width: 900px) {
+  .inner-page {
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+
+  .page-hero {
+    padding-top: 30px;
+    padding-bottom: 75px;
+  }
+
+  .about-story {
+    grid-template-columns: 75px minmax(0, 1fr);
+    gap: 25px;
+  }
+
+  .values-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+}
+
+/* ========================================
+   MOBILE RESPONSIVENESS
+======================================== */
+
+@media (max-width: 600px) {
+  .inner-page {
+    padding: 40px 22px 65px;
+  }
+
+  .page-hero {
+    padding: 25px 0 60px;
+  }
+
+  .eyebrow {
+    margin-bottom: 20px;
+    font-size: 11px;
+    letter-spacing: 3px;
+  }
+
+  .page-hero h1 {
+    font-size: clamp(35px, 10vw, 48px);
+    letter-spacing: -1.5px;
+  }
+
+  .page-hero p {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .about-story {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 40px 0 50px;
+  }
+
+  .story-mark {
+    width: 62px;
+    height: 62px;
+    border-radius: 19px;
+    font-size: 23px;
+  }
+
+  .about-story h2 {
+    font-size: 29px;
+    letter-spacing: -0.8px;
+  }
+
+  .about-story p {
+    font-size: 15px;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .values-grid article {
+    padding: 27px 24px;
+    border-radius: 18px;
+  }
+
+  .values-grid article h3 {
+    margin-top: 20px;
+  }
+}
+
+/* Reduced motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .values-grid article,
+  .text-link {
+    transition: none;
+  }
+
+  .values-grid article:hover {
+    transform: none;
+  }
+}

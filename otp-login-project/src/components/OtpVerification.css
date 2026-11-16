@@ -1,0 +1,102 @@
+
+.otp-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #eef0ff, #dce4ff);
+  font-family: Arial, sans-serif;
+}
+
+.otp-card {
+  width: 100%;
+  max-width: 430px;
+  padding: 40px;
+  background: white;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 15px 45px rgba(40, 50, 100, 0.12);
+}
+
+.otp-card h1 {
+  color: #202033;
+  margin-bottom: 12px;
+}
+
+.otp-description {
+  color: #777;
+  margin-bottom: 25px;
+}
+
+.otp-demo {
+  background: #f0efff;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  color: #6554ff;
+}
+
+.otp-timer {
+  color: #6554ff;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-variant-numeric: tabular-nums;
+}
+
+.otp-inputs {
+  display: flex;
+  justify-content: center;
+  gap: 9px;
+  margin-bottom: 25px;
+}
+
+.otp-inputs input {
+  width: 45px;
+  height: 50px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+}
+
+.otp-inputs input:focus {
+  border-color: #6554ff;
+}
+
+.otp-button,
+.otp-resend-button {
+  width: 100%;
+  padding: 14px;
+  background: #6554ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.otp-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.otp-message {
+  color: #6554ff;
+  margin-top: 18px;
+}
+
+.otp-success-icon {
+  width: 65px;
+  height: 65px;
+  margin: 0 auto 20px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #dcfce7;
+  color: #16a34a;
+  font-size: 35px;
+}
